@@ -1,0 +1,101 @@
+/* Styles for Maude and Merle's request form; supposed to be separate from main.css */ 
+
+/* Use flex-direction: column on the wrapper <div> elements.  */
+/* in the browser, the form field wrapper <div> elements have a class of "field" */
+/* the flex-direction property is a flexbox property, so must use "display: flex" to activate flexbox */ 
+/* must also import this new css module, details.css, into main.css */ 
+
+/* added margin to make space between each form field */ 
+
+.field {
+
+    display: flex; 
+    flex-direction: column; 
+    margin: 10px; 
+}
+
+/* styles the form input fields */ 
+/* reduced the width of the input fields */ 
+
+.input {
+
+    width: 40%; 
+
+}
+
+/* styles the "Submit Request" button */ 
+/* added margin to make between the last form field and the button */ 
+/* background color makes the button appear dark blue as a whole */ 
+/* color makes the button font appear white */ 
+/* padding adds more space between button content and the border, so it looks roomy inside */ 
+
+.button {
+
+    margin: 10px; 
+    background-color:darkslateblue; 
+    color: white; 
+    padding: 7px 5px; 
+
+}
+
+/* reduced padding to 0, so the service requests don't have any extra space on the left; touch the browser edge */ 
+
+ul {
+
+    margin-left: 10px; 
+    padding: 5px;  
+
+}
+
+/* styles each "service request" that was submitted and displaying on the page */ 
+/* used flex box to give some space between the service request text and delete button */ 
+
+/* list style image property hides the bullet points of the <li> elements */ 
+/* added a dotted border around each service request */ 
+/* each service request's width took up the width of the browser, so reduced width by 40% */  
+/* added padding to create some space between the text content and the inside of the border */ 
+
+li {
+
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    /* list-style-type: none;   */
+
+    border: 1px dotted lightblue; 
+    width: 38%; 
+    padding: 5px; 
+    
+}
+
+/* styles the service request background; each odd numbered <li> element or request will be this color */ 
+/* the service request list will show alternating colors for each entry */ 
+
+li:nth-child(odd) {
+
+    background-color:lightgrey; 
+
+}
+
+/* styles for the "tools_emoji.png" image */ 
+/* just added width and height to shrink the image down */ 
+
+img {
+
+    width: 20px; 
+    height: 20px; 
+
+    /* float: left;  */
+}
+
+/* styles the "Delete" button on each service request */ 
+/* float property with a value of right moves the delete button to the end of the service request line */ 
+
+
+.request__delete {
+
+    background-color:blueviolet; 
+    color: white; 
+    padding: 2px 6px; 
+
+}

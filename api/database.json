@@ -1,0 +1,36 @@
+{
+  "plumbers": [
+    {
+      "name": "Maude",
+      "id": 1
+    },
+    {
+      "name": "Merle",
+      "id": 2
+    }
+  ],
+  "completions": [
+    {
+      "requestId": 2,
+      "plumberId": 1,
+      "date_created": "Mon Nov 14 2022 13:16:40 GMT-0600 (Central Standard Time)",
+      "id": 1
+    }
+  ],
+  "requests": [
+    {
+      "description": "Leaky bathtub faucet",
+      "address": "222 Sunrise Dr",
+      "budget": "300",
+      "neededBy": "2022-11-12",
+      "id": 2
+    },
+    {
+      "description": "Kitchen sink leaks",
+      "address": "222 Sunshine Way",
+      "budget": "290",
+      "neededBy": "2022-11-12",
+      "id": 3
+    }
+  ]
+}
